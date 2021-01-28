@@ -186,7 +186,12 @@ def big_shoe_rebounds
   biggest[:rebounds]
 end 
 
-
+def most_points_scored
+  most = any_all_players.max_by do |player_hash|
+    player_hash[:points]
+  end 
+  most[:points]
+end 
 
 
 
